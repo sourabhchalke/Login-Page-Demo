@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#bg{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), url(../task/images/bg-img.jpg);
+    height: 700px;
+    
+}
+.forms{
+    background: whitesmoke;
+    border-radius: 0px 0px 0px 40px;
+}
+.read-more{
+    border: white;
+    color: white;
+    background: orangered;
+}
+.read-more:hover{
+    border: black;
+    background: white;
+    color:black;
+}
+#p a{
+    text-decoration: none;
+}
+#p span{
+    color: orangered;
+}
