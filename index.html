@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login-Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="bg">
+            <div class="forms col-12 col-lg-6 ms-auto mb-4">
+                <h2 class="fw-bold text-center mt-5 p-3">Create Account</h2>
+                <div class="row my-4 mt-3 p-4 ">
+                    <div class="col-12 col-lg-9 mx-auto  mb-4 ">
+                        <input type="text" class="form-control  bg-light border-1" placeholder="First Name*"
+                            aria-label="First name">
+                    </div>
+                    <div class="col-12 col-lg-9 mx-auto mb-4">
+                        <input type="text" class="form-control bg-light border-1" placeholder="Last Name"
+                            aria-label="First name">
+                    </div>
+                    <div class="col-12 col-lg-9 mx-auto mb-4">
+                        <input type="text" class="form-control bg-light border-1" placeholder="Your Phone Number"
+                            aria-label="Last name">
+                    </div>
+                    <div class="col-12 col-lg-9 mx-auto mb-4">
+                        <input type="email" class="form-control bg-light border10" placeholder="Your Email Adress"
+                            aria-label="Last name">
+                    </div>
+                    <div class="col-12 col-lg-9 mx-auto mb-4 d-flex justify-content-center">
+                        <input type="password" placeholder="Password" class="form-control bg-light border10" id="myInput">
+                        <i class="far fa-eye my-auto ms-2" onclick="myFunction()"></i>
+                    </div>
+
+                    <button class="read-more fw-semibold w-50 mx-auto px-3 py-3 rounded-5 mt-4 mb-3">CREATE
+                        ACCOUNT</button>
+
+                    <p class="text-center" id="p"><a href="#" target="_blank">Already have and account ? </a><a href="#"
+                            target="_blank"><span>Login</span></a></p>
+
+                    <div class="d-flex justify-content-center">
+                        <i class="fab fa-facebook fs-3 me-2"></i>
+                        <i class="fab fa-twitter fs-3 me-2"></i>
+                        <i class="fab fa-linkedin fs-3 me-2"></i>
+                        <i class="fab fa-instagram-square fs-3 me-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>
